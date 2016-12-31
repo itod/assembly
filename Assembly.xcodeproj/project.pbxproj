@@ -1,0 +1,1499 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D303323D16D2BA0B00EB128F /* TDAppKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D3D7A27916D00BB3003C901F /* TDAppKit.framework */; };
+		D303323E16D2BA1300EB128F /* ParseKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D305230016D15E8000A8E114 /* ParseKit.framework */; };
+		D305233816D1B78C00A8E114 /* InstructionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D305233716D1B78C00A8E114 /* InstructionTests.m */; };
+		D305BB9B16D963CA0089AB8C /* ASTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = D305BB9A16D963CA0089AB8C /* ASTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D305BBA516D964470089AB8C /* ASUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = D305BBA416D964470089AB8C /* ASUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D305BBA716D964970089AB8C /* ASUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D305BBA616D964970089AB8C /* ASUtils.m */; };
+		D305BBAC16D988BE0089AB8C /* ASAddressExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = D305BBAA16D988BE0089AB8C /* ASAddressExpression.m */; };
+		D305BBB216D9B4A70089AB8C /* ASMutableStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = D305BBB016D9B4A60089AB8C /* ASMutableStorage.m */; };
+		D305BBB416D9B5310089AB8C /* ASMutableStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = D305BBB316D9B5300089AB8C /* ASMutableStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D308147616DA842100E4E756 /* ASAddressRegisterIndirectExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = D308147416DA842100E4E756 /* ASAddressRegisterIndirectExpression.h */; };
+		D308147A16DA879500E4E756 /* ASAddressIndexedExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = D308147816DA879500E4E756 /* ASAddressIndexedExpression.h */; };
+		D308147B16DA879500E4E756 /* ASAddressIndexedExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = D308147916DA879500E4E756 /* ASAddressIndexedExpression.m */; };
+		D30814A316DADB7600E4E756 /* ASRegisterExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = D30814A116DADB7600E4E756 /* ASRegisterExpression.m */; };
+		D30814A416DADB7600E4E756 /* ASRegisterExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = D30814A216DADB7600E4E756 /* ASRegisterExpression.h */; };
+		D30814A716DADB9500E4E756 /* ASMutableStorageExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = D30814A516DADB9500E4E756 /* ASMutableStorageExpression.m */; };
+		D30814A816DADB9500E4E756 /* ASMutableStorageExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = D30814A616DADB9500E4E756 /* ASMutableStorageExpression.h */; };
+		D30814AB16DADC9500E4E756 /* AS32BitRegisterExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = D30814A916DADC9500E4E756 /* AS32BitRegisterExpression.h */; };
+		D30814AC16DADC9500E4E756 /* AS32BitRegisterExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = D30814AA16DADC9500E4E756 /* AS32BitRegisterExpression.m */; };
+		D30814AF16DADCDD00E4E756 /* AS16BitRegisterExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = D30814AD16DADCDC00E4E756 /* AS16BitRegisterExpression.h */; };
+		D30814B016DADCDD00E4E756 /* AS16BitRegisterExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = D30814AE16DADCDC00E4E756 /* AS16BitRegisterExpression.m */; };
+		D30814B316DADD0C00E4E756 /* AS8BitRegisterExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = D30814B116DADD0C00E4E756 /* AS8BitRegisterExpression.h */; };
+		D30814B416DADD0C00E4E756 /* AS8BitRegisterExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = D30814B216DADD0C00E4E756 /* AS8BitRegisterExpression.m */; };
+		D30814D016DAEB3F00E4E756 /* ASAddressRegisterIndirectExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = D30814CF16DAEB3E00E4E756 /* ASAddressRegisterIndirectExpression.m */; };
+		D30814E616DAF43900E4E756 /* ASStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = D30814E416DAF43900E4E756 /* ASStorage.m */; };
+		D30AD49616E50DD5004BE616 /* SEClearHistoryImage.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D30AD48F16E50DD5004BE616 /* SEClearHistoryImage.tiff */; };
+		D30AD49716E50DD5004BE616 /* SECompileScriptImage.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D30AD49016E50DD5004BE616 /* SECompileScriptImage.tiff */; };
+		D30AD49816E50DD5004BE616 /* SECompileScriptImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D30AD49116E50DD5004BE616 /* SECompileScriptImage@2x.png */; };
+		D30AD49916E50DD5004BE616 /* SEContinueImage.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D30AD49216E50DD5004BE616 /* SEContinueImage.tiff */; };
+		D30AD49A16E50DD5004BE616 /* SERestartImage.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D30AD49316E50DD5004BE616 /* SERestartImage.tiff */; };
+		D30AD49B16E50DD5004BE616 /* SERunScriptImage.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D30AD49416E50DD5004BE616 /* SERunScriptImage.tiff */; };
+		D30AD49C16E50DD5004BE616 /* SEStopScriptImage.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D30AD49516E50DD5004BE616 /* SEStopScriptImage.tiff */; };
+		D30C7B6D16D6A9E90000A5E0 /* assembly.g in Resources */ = {isa = PBXBuildFile; fileRef = D3715F2516D69897003B57EE /* assembly.g */; };
+		D30C7B7116D6ACBE0000A5E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D33DA28F16D00A2A007D364A /* Foundation.framework */; };
+		D30C7B9D16D8218B0000A5E0 /* MemoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D30C7B9C16D8218B0000A5E0 /* MemoryTests.m */; };
+		D30D8D1716D9365E00D4B7F7 /* ASSourceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D30D8D1516D9365E00D4B7F7 /* ASSourceViewController.xib */; };
+		D30D8D2216D9367D00D4B7F7 /* ASRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D30D8D2016D9367D00D4B7F7 /* ASRegisterViewController.xib */; };
+		D30D8D2516D9368500D4B7F7 /* ASLogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D30D8D2316D9368500D4B7F7 /* ASLogViewController.xib */; };
+		D30D8D2816D9369100D4B7F7 /* ASMemoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D30D8D2616D9369100D4B7F7 /* ASMemoryViewController.xib */; };
+		D313882916DB015D003805C2 /* ASStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = D313882816DB015C003805C2 /* ASStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D313882B16DB022C003805C2 /* ASStatement.h in Headers */ = {isa = PBXBuildFile; fileRef = D313882A16DB022C003805C2 /* ASStatement.h */; };
+		D313882D16DB0237003805C2 /* ASExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = D313882C16DB0237003805C2 /* ASExpression.h */; };
+		D313882F16DB023D003805C2 /* ASValue.h in Headers */ = {isa = PBXBuildFile; fileRef = D313882E16DB023D003805C2 /* ASValue.h */; };
+		D313883116DB024D003805C2 /* ASAddressExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = D313883016DB024D003805C2 /* ASAddressExpression.h */; };
+		D313883516DB0270003805C2 /* ASUnaryInstruction.h in Headers */ = {isa = PBXBuildFile; fileRef = D313883416DB0270003805C2 /* ASUnaryInstruction.h */; };
+		D313883716DB0278003805C2 /* ASNotInstruction.h in Headers */ = {isa = PBXBuildFile; fileRef = D313883616DB0278003805C2 /* ASNotInstruction.h */; };
+		D313883916DB027C003805C2 /* ASNegInstruction.h in Headers */ = {isa = PBXBuildFile; fileRef = D313883816DB027C003805C2 /* ASNegInstruction.h */; };
+		D313883B16DB0283003805C2 /* ASDyadicInstruction.h in Headers */ = {isa = PBXBuildFile; fileRef = D313883A16DB0283003805C2 /* ASDyadicInstruction.h */; };
+		D313883D16DB028E003805C2 /* ASMovInstruction.h in Headers */ = {isa = PBXBuildFile; fileRef = D313883C16DB028E003805C2 /* ASMovInstruction.h */; };
+		D313883F16DB029E003805C2 /* ASAndInstruction.h in Headers */ = {isa = PBXBuildFile; fileRef = D313883E16DB029E003805C2 /* ASAndInstruction.h */; };
+		D313884116DB02A4003805C2 /* ASOrInstruction.h in Headers */ = {isa = PBXBuildFile; fileRef = D313884016DB02A4003805C2 /* ASOrInstruction.h */; };
+		D313884316DB02A8003805C2 /* ASXorInstruction.h in Headers */ = {isa = PBXBuildFile; fileRef = D313884216DB02A8003805C2 /* ASXorInstruction.h */; };
+		D313884516DB02AD003805C2 /* ASPutInstruction.h in Headers */ = {isa = PBXBuildFile; fileRef = D313884416DB02AD003805C2 /* ASPutInstruction.h */; };
+		D313884716DB02B3003805C2 /* ASPushInstruction.h in Headers */ = {isa = PBXBuildFile; fileRef = D313884616DB02B3003805C2 /* ASPushInstruction.h */; };
+		D313884916DB02C3003805C2 /* ASPopInstruction.h in Headers */ = {isa = PBXBuildFile; fileRef = D313884816DB02C3003805C2 /* ASPopInstruction.h */; };
+		D313884B16DB02CB003805C2 /* ASShlInstruction.h in Headers */ = {isa = PBXBuildFile; fileRef = D313884A16DB02CB003805C2 /* ASShlInstruction.h */; };
+		D313884D16DB02D0003805C2 /* ASShrInstruction.h in Headers */ = {isa = PBXBuildFile; fileRef = D313884C16DB02D0003805C2 /* ASShrInstruction.h */; };
+		D313885116DB04E2003805C2 /* ASInstruction.h in Headers */ = {isa = PBXBuildFile; fileRef = D313885016DB04E2003805C2 /* ASInstruction.h */; };
+		D31C53E716E3EB8E00F66A78 /* ASEFlagsRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = D31C53E516E3EB8E00F66A78 /* ASEFlagsRegister.m */; };
+		D31C53E916E3EBA200F66A78 /* ASEFlagsRegister.h in Headers */ = {isa = PBXBuildFile; fileRef = D31C53E816E3EBA200F66A78 /* ASEFlagsRegister.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D31C53EC16E3ED6C00F66A78 /* EFlagTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D31C53EB16E3ED6C00F66A78 /* EFlagTests.m */; };
+		D31C53F116E3FACF00F66A78 /* ASEFlagsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D31C53EF16E3FACF00F66A78 /* ASEFlagsViewController.m */; };
+		D31C53F516E3FAFA00F66A78 /* ASEFlagsView.m in Sources */ = {isa = PBXBuildFile; fileRef = D31C53F416E3FAFA00F66A78 /* ASEFlagsView.m */; };
+		D31C53F816E3FC8800F66A78 /* ASEFlagsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D31C53F616E3FC8800F66A78 /* ASEFlagsViewController.xib */; };
+		D329602116DD3E800021AF53 /* ASMemoryLocationListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D329602016DD3E800021AF53 /* ASMemoryLocationListItem.m */; };
+		D33DA28B16D00A2A007D364A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D33DA28A16D00A2A007D364A /* Cocoa.framework */; };
+		D33DA29516D00A2A007D364A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D33DA29316D00A2A007D364A /* InfoPlist.strings */; };
+		D33DA29716D00A2A007D364A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D33DA29616D00A2A007D364A /* main.m */; };
+		D33DA29B16D00A2A007D364A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D33DA29916D00A2A007D364A /* Credits.rtf */; };
+		D33DA29E16D00A2A007D364A /* ASDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = D33DA29D16D00A2A007D364A /* ASDocument.m */; };
+		D33DA2A116D00A2A007D364A /* ASDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = D33DA29F16D00A2A007D364A /* ASDocument.xib */; };
+		D33DA2A416D00A2A007D364A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D33DA2A216D00A2A007D364A /* MainMenu.xib */; };
+		D33DA2B516D00A2A007D364A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D33DA2B316D00A2A007D364A /* InfoPlist.strings */; };
+		D33DA2B816D00A2A007D364A /* ConstantTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D33DA2B716D00A2A007D364A /* ConstantTests.m */; };
+		D33DA2C316D00A67007D364A /* ASRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D33DA2C216D00A67007D364A /* ASRegisterView.m */; };
+		D3596B3116D9D8E50053469D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D33DA28A16D00A2A007D364A /* Cocoa.framework */; };
+		D3596B3216D9D8E60053469D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D33DA2AB16D00A2A007D364A /* SenTestingKit.framework */; };
+		D370754216D094F90040BB01 /* RegisterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D370754116D094F90040BB01 /* RegisterTests.m */; };
+		D3715E9016D692BE003B57EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3715E8E16D692BE003B57EE /* InfoPlist.strings */; };
+		D3715EBA16D69305003B57EE /* AssemblyKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D3715E8316D692BD003B57EE /* AssemblyKit.framework */; };
+		D3715EBD16D69328003B57EE /* ParseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D305230016D15E8000A8E114 /* ParseKit.framework */; };
+		D3715EBE16D69362003B57EE /* AssemblyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3715E8316D692BD003B57EE /* AssemblyKit.framework */; };
+		D3715EC116D6941E003B57EE /* AssemblyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3715E8316D692BD003B57EE /* AssemblyKit.framework */; };
+		D3715EC316D694E7003B57EE /* ASContext.h in Headers */ = {isa = PBXBuildFile; fileRef = D3715EC216D694E7003B57EE /* ASContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3715EC516D694EC003B57EE /* ASProgram.h in Headers */ = {isa = PBXBuildFile; fileRef = D3715EC416D694EC003B57EE /* ASProgram.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3715EC716D694F1003B57EE /* ASProgramRunner.h in Headers */ = {isa = PBXBuildFile; fileRef = D3715EC616D694F1003B57EE /* ASProgramRunner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3715ECB16D69578003B57EE /* AssemblyKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D3715ECA16D69571003B57EE /* AssemblyKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3715ECF16D695D8003B57EE /* ASProgramAssembler.h in Headers */ = {isa = PBXBuildFile; fileRef = D3715ECD16D695D8003B57EE /* ASProgramAssembler.h */; };
+		D3715ED016D695D8003B57EE /* ASProgramAssembler.m in Sources */ = {isa = PBXBuildFile; fileRef = D3715ECE16D695D8003B57EE /* ASProgramAssembler.m */; };
+		D3715ED216D6962C003B57EE /* ASProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = D3715ED116D6962C003B57EE /* ASProgram.m */; };
+		D3715ED416D69631003B57EE /* ASProgramRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = D3715ED316D69631003B57EE /* ASProgramRunner.m */; };
+		D3715ED616D69648003B57EE /* ASStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = D3715ED516D69648003B57EE /* ASStatement.m */; };
+		D3715ED816D6964D003B57EE /* ASContext.m in Sources */ = {isa = PBXBuildFile; fileRef = D3715ED716D6964D003B57EE /* ASContext.m */; };
+		D3715EDE16D69753003B57EE /* ASRegister.h in Headers */ = {isa = PBXBuildFile; fileRef = D3715EDD16D69753003B57EE /* ASRegister.h */; };
+		D3715EE216D69767003B57EE /* AS8BitRegister.h in Headers */ = {isa = PBXBuildFile; fileRef = D3715EE116D69767003B57EE /* AS8BitRegister.h */; };
+		D3715EE416D6976C003B57EE /* AS16BitRegister.h in Headers */ = {isa = PBXBuildFile; fileRef = D3715EE316D6976C003B57EE /* AS16BitRegister.h */; };
+		D3715EE816D6977A003B57EE /* ASSubRegister.h in Headers */ = {isa = PBXBuildFile; fileRef = D3715EE716D6977A003B57EE /* ASSubRegister.h */; };
+		D3715EEA16D69781003B57EE /* ASSubRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = D3715EE916D69781003B57EE /* ASSubRegister.m */; };
+		D3715EEE16D6978D003B57EE /* AS8BitRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = D3715EEB16D6978D003B57EE /* AS8BitRegister.m */; };
+		D3715EEF16D6978D003B57EE /* AS16BitRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = D3715EEC16D6978D003B57EE /* AS16BitRegister.m */; };
+		D3715EF416D697B3003B57EE /* ASValue.m in Sources */ = {isa = PBXBuildFile; fileRef = D3715EF116D697B3003B57EE /* ASValue.m */; };
+		D3715EF516D697B3003B57EE /* ASExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = D3715EF216D697B3003B57EE /* ASExpression.m */; };
+		D3715EF616D697B3003B57EE /* ASRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = D3715EF316D697B3003B57EE /* ASRegister.m */; };
+		D3715EF816D697D4003B57EE /* ASInstruction.m in Sources */ = {isa = PBXBuildFile; fileRef = D3715EF716D697D4003B57EE /* ASInstruction.m */; };
+		D3715F1916D6984E003B57EE /* ASAndInstruction.m in Sources */ = {isa = PBXBuildFile; fileRef = D3715F0F16D6984E003B57EE /* ASAndInstruction.m */; };
+		D3715F1A16D6984E003B57EE /* ASDyadicInstruction.m in Sources */ = {isa = PBXBuildFile; fileRef = D3715F1016D6984E003B57EE /* ASDyadicInstruction.m */; };
+		D3715F1B16D6984E003B57EE /* ASMovInstruction.m in Sources */ = {isa = PBXBuildFile; fileRef = D3715F1116D6984E003B57EE /* ASMovInstruction.m */; };
+		D3715F1C16D6984E003B57EE /* ASNegInstruction.m in Sources */ = {isa = PBXBuildFile; fileRef = D3715F1216D6984E003B57EE /* ASNegInstruction.m */; };
+		D3715F1D16D6984E003B57EE /* ASNotInstruction.m in Sources */ = {isa = PBXBuildFile; fileRef = D3715F1316D6984E003B57EE /* ASNotInstruction.m */; };
+		D3715F1E16D6984E003B57EE /* ASOrInstruction.m in Sources */ = {isa = PBXBuildFile; fileRef = D3715F1416D6984E003B57EE /* ASOrInstruction.m */; };
+		D3715F1F16D6984E003B57EE /* ASShlInstruction.m in Sources */ = {isa = PBXBuildFile; fileRef = D3715F1516D6984E003B57EE /* ASShlInstruction.m */; };
+		D3715F2016D6984E003B57EE /* ASShrInstruction.m in Sources */ = {isa = PBXBuildFile; fileRef = D3715F1616D6984E003B57EE /* ASShrInstruction.m */; };
+		D3715F2116D6984E003B57EE /* ASUnaryInstruction.m in Sources */ = {isa = PBXBuildFile; fileRef = D3715F1716D6984E003B57EE /* ASUnaryInstruction.m */; };
+		D3715F2216D6984E003B57EE /* ASXorInstruction.m in Sources */ = {isa = PBXBuildFile; fileRef = D3715F1816D6984E003B57EE /* ASXorInstruction.m */; };
+		D3715F2416D6988B003B57EE /* ASPutInstruction.m in Sources */ = {isa = PBXBuildFile; fileRef = D3715F2316D6988B003B57EE /* ASPutInstruction.m */; };
+		D3A297AA16D2B64900179675 /* ASDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A297A916D2B64900179675 /* ASDocumentController.m */; };
+		D3CC6E6B16E464F10039EE6E /* IDERoundToolbarButton_Pause_Active.png in Resources */ = {isa = PBXBuildFile; fileRef = D3CC6E5916E464F10039EE6E /* IDERoundToolbarButton_Pause_Active.png */; };
+		D3CC6E6C16E464F10039EE6E /* IDERoundToolbarButton_Pause_Active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3CC6E5A16E464F10039EE6E /* IDERoundToolbarButton_Pause_Active@2x.png */; };
+		D3CC6E7116E464F10039EE6E /* IDERoundToolbarButton_Run_Active.png in Resources */ = {isa = PBXBuildFile; fileRef = D3CC6E5F16E464F10039EE6E /* IDERoundToolbarButton_Run_Active.png */; };
+		D3CC6E7216E464F10039EE6E /* IDERoundToolbarButton_Run_Active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3CC6E6016E464F10039EE6E /* IDERoundToolbarButton_Run_Active@2x.png */; };
+		D3CC6E7716E464F10039EE6E /* IDERoundToolbarButton_Stop_Active.png in Resources */ = {isa = PBXBuildFile; fileRef = D3CC6E6516E464F10039EE6E /* IDERoundToolbarButton_Stop_Active.png */; };
+		D3CC6E7816E464F10039EE6E /* IDERoundToolbarButton_Stop_Active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3CC6E6616E464F10039EE6E /* IDERoundToolbarButton_Stop_Active@2x.png */; };
+		D3CF3FED16D85AB10097B667 /* ASMemoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CF3FEB16D85AB10097B667 /* ASMemoryViewController.m */; };
+		D3CF3FF116D85AD90097B667 /* ASMemoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CF3FF016D85AD90097B667 /* ASMemoryView.m */; };
+		D3CF3FF516D866FB0097B667 /* ASPushInstruction.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CF3FF316D866FB0097B667 /* ASPushInstruction.m */; };
+		D3CF3FF916D873A50097B667 /* ASPopInstruction.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CF3FF816D873A50097B667 /* ASPopInstruction.m */; };
+		D3D7A28016D00BC1003C901F /* TDAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3D7A27916D00BB3003C901F /* TDAppKit.framework */; };
+		D3D7A28716D053D5003C901F /* ASRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7A28516D053D5003C901F /* ASRegisterViewController.m */; };
+		D3D7A28C16D055D8003C901F /* ASSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7A28A16D055D8003C901F /* ASSourceViewController.m */; };
+		D3D7A29116D0560C003C901F /* ASLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7A28F16D0560C003C901F /* ASLogViewController.m */; };
+		D3F60DDD16DD636700FAC43C /* ASMemoryHeaderListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F60DDC16DD636700FAC43C /* ASMemoryHeaderListItem.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D30522FF16D15E8000A8E114 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D30522EF16D15E7F00A8E114 /* ParseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = ParseKit;
+		};
+		D305230116D15E8000A8E114 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D30522EF16D15E7F00A8E114 /* ParseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D389F1CE0F1965E600558235;
+			remoteInfo = JSParseKit;
+		};
+		D305230316D15E8000A8E114 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D30522EF16D15E7F00A8E114 /* ParseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D3FDC5830FFC4BFC00F1F797;
+			remoteInfo = ParseKitMobile;
+		};
+		D305230516D15E8000A8E114 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D30522EF16D15E7F00A8E114 /* ParseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D37D8DC61571A4F700CDB822;
+			remoteInfo = Tests;
+		};
+		D305230716D15E8000A8E114 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D30522EF16D15E7F00A8E114 /* ParseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D33494100E2963FD00406085;
+			remoteInfo = DemoApp;
+		};
+		D305230916D15E8000A8E114 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D30522EF16D15E7F00A8E114 /* ParseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D34185040E520D3F0081B0DC;
+			remoteInfo = DebugApp;
+		};
+		D305230B16D15E8000A8E114 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D30522EF16D15E7F00A8E114 /* ParseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D389F2030F196A7500558235;
+			remoteInfo = JSDemoApp;
+		};
+		D3715EB816D692F7003B57EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D33DA27F16D00A2A007D364A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3715E8216D692BD003B57EE;
+			remoteInfo = AssemblyKit;
+		};
+		D3715EBB16D6931F003B57EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D30522EF16D15E7F00A8E114 /* ParseKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = ParseKit;
+		};
+		D3715EBF16D69417003B57EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D33DA27F16D00A2A007D364A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3715E8216D692BD003B57EE;
+			remoteInfo = AssemblyKit;
+		};
+		D3D7A27816D00BB3003C901F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3D7A27216D00BB2003C901F /* TDAppKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = TDAppKit;
+		};
+		D3D7A27A16D00BB3003C901F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3D7A27216D00BB2003C901F /* TDAppKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D31CBFE910EFB9630013347D;
+			remoteInfo = ListViewDemoApp;
+		};
+		D3D7A27C16D00BB3003C901F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3D7A27216D00BB2003C901F /* TDAppKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D36E1F5B11703E8300110DBA;
+			remoteInfo = ComboFieldDemoApp;
+		};
+		D3D7A27E16D00BBC003C901F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3D7A27216D00BB2003C901F /* TDAppKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = TDAppKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D303323416D2B9E600EB128F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D3715EBA16D69305003B57EE /* AssemblyKit.framework in CopyFiles */,
+				D303323D16D2BA0B00EB128F /* TDAppKit.framework in CopyFiles */,
+				D303323E16D2BA1300EB128F /* ParseKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D30522EF16D15E7F00A8E114 /* ParseKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ParseKit.xcodeproj; path = lib/ParseKit/ParseKit.xcodeproj; sourceTree = "<group>"; };
+		D305233616D1B78C00A8E114 /* InstructionTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstructionTests.h; sourceTree = "<group>"; };
+		D305233716D1B78C00A8E114 /* InstructionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstructionTests.m; sourceTree = "<group>"; };
+		D305BB9A16D963CA0089AB8C /* ASTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASTypes.h; path = include/AssemblyKit/ASTypes.h; sourceTree = "<group>"; };
+		D305BBA416D964470089AB8C /* ASUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASUtils.h; path = include/AssemblyKit/ASUtils.h; sourceTree = "<group>"; };
+		D305BBA616D964970089AB8C /* ASUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASUtils.m; path = src/ASUtils.m; sourceTree = "<group>"; };
+		D305BBAA16D988BE0089AB8C /* ASAddressExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASAddressExpression.m; path = AssemblyKit/src/ASAddressExpression.m; sourceTree = SOURCE_ROOT; };
+		D305BBB016D9B4A60089AB8C /* ASMutableStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASMutableStorage.m; path = AssemblyKit/src/ASMutableStorage.m; sourceTree = SOURCE_ROOT; };
+		D305BBB316D9B5300089AB8C /* ASMutableStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASMutableStorage.h; path = AssemblyKit/include/AssemblyKit/ASMutableStorage.h; sourceTree = SOURCE_ROOT; };
+		D308147416DA842100E4E756 /* ASAddressRegisterIndirectExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASAddressRegisterIndirectExpression.h; path = AssemblyKit/src/ASAddressRegisterIndirectExpression.h; sourceTree = SOURCE_ROOT; };
+		D308147816DA879500E4E756 /* ASAddressIndexedExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASAddressIndexedExpression.h; path = AssemblyKit/src/ASAddressIndexedExpression.h; sourceTree = SOURCE_ROOT; };
+		D308147916DA879500E4E756 /* ASAddressIndexedExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASAddressIndexedExpression.m; path = AssemblyKit/src/ASAddressIndexedExpression.m; sourceTree = SOURCE_ROOT; };
+		D30814A116DADB7600E4E756 /* ASRegisterExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASRegisterExpression.m; path = AssemblyKit/src/ASRegisterExpression.m; sourceTree = SOURCE_ROOT; };
+		D30814A216DADB7600E4E756 /* ASRegisterExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASRegisterExpression.h; path = AssemblyKit/src/ASRegisterExpression.h; sourceTree = SOURCE_ROOT; };
+		D30814A516DADB9500E4E756 /* ASMutableStorageExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASMutableStorageExpression.m; path = AssemblyKit/src/ASMutableStorageExpression.m; sourceTree = SOURCE_ROOT; };
+		D30814A616DADB9500E4E756 /* ASMutableStorageExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASMutableStorageExpression.h; path = AssemblyKit/src/ASMutableStorageExpression.h; sourceTree = SOURCE_ROOT; };
+		D30814A916DADC9500E4E756 /* AS32BitRegisterExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AS32BitRegisterExpression.h; path = AssemblyKit/src/AS32BitRegisterExpression.h; sourceTree = SOURCE_ROOT; };
+		D30814AA16DADC9500E4E756 /* AS32BitRegisterExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AS32BitRegisterExpression.m; path = AssemblyKit/src/AS32BitRegisterExpression.m; sourceTree = SOURCE_ROOT; };
+		D30814AD16DADCDC00E4E756 /* AS16BitRegisterExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AS16BitRegisterExpression.h; path = AssemblyKit/src/AS16BitRegisterExpression.h; sourceTree = SOURCE_ROOT; };
+		D30814AE16DADCDC00E4E756 /* AS16BitRegisterExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AS16BitRegisterExpression.m; path = AssemblyKit/src/AS16BitRegisterExpression.m; sourceTree = SOURCE_ROOT; };
+		D30814B116DADD0C00E4E756 /* AS8BitRegisterExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AS8BitRegisterExpression.h; path = AssemblyKit/src/AS8BitRegisterExpression.h; sourceTree = SOURCE_ROOT; };
+		D30814B216DADD0C00E4E756 /* AS8BitRegisterExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AS8BitRegisterExpression.m; path = AssemblyKit/src/AS8BitRegisterExpression.m; sourceTree = SOURCE_ROOT; };
+		D30814CF16DAEB3E00E4E756 /* ASAddressRegisterIndirectExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASAddressRegisterIndirectExpression.m; path = AssemblyKit/src/ASAddressRegisterIndirectExpression.m; sourceTree = SOURCE_ROOT; };
+		D30814E416DAF43900E4E756 /* ASStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASStorage.m; path = AssemblyKit/src/ASStorage.m; sourceTree = SOURCE_ROOT; };
+		D30AD48F16E50DD5004BE616 /* SEClearHistoryImage.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = SEClearHistoryImage.tiff; sourceTree = "<group>"; };
+		D30AD49016E50DD5004BE616 /* SECompileScriptImage.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = SECompileScriptImage.tiff; sourceTree = "<group>"; };
+		D30AD49116E50DD5004BE616 /* SECompileScriptImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SECompileScriptImage@2x.png"; sourceTree = "<group>"; };
+		D30AD49216E50DD5004BE616 /* SEContinueImage.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = SEContinueImage.tiff; sourceTree = "<group>"; };
+		D30AD49316E50DD5004BE616 /* SERestartImage.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = SERestartImage.tiff; sourceTree = "<group>"; };
+		D30AD49416E50DD5004BE616 /* SERunScriptImage.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = SERunScriptImage.tiff; sourceTree = "<group>"; };
+		D30AD49516E50DD5004BE616 /* SEStopScriptImage.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = SEStopScriptImage.tiff; sourceTree = "<group>"; };
+		D30C7B9B16D8218B0000A5E0 /* MemoryTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryTests.h; sourceTree = "<group>"; };
+		D30C7B9C16D8218B0000A5E0 /* MemoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryTests.m; sourceTree = "<group>"; };
+		D30D8D1616D9365E00D4B7F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ASSourceViewController.xib; sourceTree = "<group>"; };
+		D30D8D2116D9367D00D4B7F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ASRegisterViewController.xib; sourceTree = "<group>"; };
+		D30D8D2416D9368500D4B7F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ASLogViewController.xib; sourceTree = "<group>"; };
+		D30D8D2716D9369100D4B7F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ASMemoryViewController.xib; sourceTree = "<group>"; };
+		D313882816DB015C003805C2 /* ASStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASStorage.h; path = AssemblyKit/include/AssemblyKit/ASStorage.h; sourceTree = SOURCE_ROOT; };
+		D313882A16DB022C003805C2 /* ASStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASStatement.h; path = AssemblyKit/src/ASStatement.h; sourceTree = SOURCE_ROOT; };
+		D313882C16DB0237003805C2 /* ASExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASExpression.h; path = AssemblyKit/src/ASExpression.h; sourceTree = SOURCE_ROOT; };
+		D313882E16DB023D003805C2 /* ASValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASValue.h; path = AssemblyKit/src/ASValue.h; sourceTree = SOURCE_ROOT; };
+		D313883016DB024D003805C2 /* ASAddressExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASAddressExpression.h; path = AssemblyKit/src/ASAddressExpression.h; sourceTree = SOURCE_ROOT; };
+		D313883416DB0270003805C2 /* ASUnaryInstruction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASUnaryInstruction.h; path = AssemblyKit/src/ASUnaryInstruction.h; sourceTree = SOURCE_ROOT; };
+		D313883616DB0278003805C2 /* ASNotInstruction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASNotInstruction.h; path = AssemblyKit/src/ASNotInstruction.h; sourceTree = SOURCE_ROOT; };
+		D313883816DB027C003805C2 /* ASNegInstruction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASNegInstruction.h; path = AssemblyKit/src/ASNegInstruction.h; sourceTree = SOURCE_ROOT; };
+		D313883A16DB0283003805C2 /* ASDyadicInstruction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASDyadicInstruction.h; path = AssemblyKit/src/ASDyadicInstruction.h; sourceTree = SOURCE_ROOT; };
+		D313883C16DB028E003805C2 /* ASMovInstruction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASMovInstruction.h; path = AssemblyKit/src/ASMovInstruction.h; sourceTree = SOURCE_ROOT; };
+		D313883E16DB029E003805C2 /* ASAndInstruction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASAndInstruction.h; path = AssemblyKit/src/ASAndInstruction.h; sourceTree = SOURCE_ROOT; };
+		D313884016DB02A4003805C2 /* ASOrInstruction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASOrInstruction.h; path = AssemblyKit/src/ASOrInstruction.h; sourceTree = SOURCE_ROOT; };
+		D313884216DB02A8003805C2 /* ASXorInstruction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASXorInstruction.h; path = AssemblyKit/src/ASXorInstruction.h; sourceTree = SOURCE_ROOT; };
+		D313884416DB02AD003805C2 /* ASPutInstruction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASPutInstruction.h; path = AssemblyKit/src/ASPutInstruction.h; sourceTree = SOURCE_ROOT; };
+		D313884616DB02B3003805C2 /* ASPushInstruction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASPushInstruction.h; path = AssemblyKit/src/ASPushInstruction.h; sourceTree = SOURCE_ROOT; };
+		D313884816DB02C3003805C2 /* ASPopInstruction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASPopInstruction.h; path = AssemblyKit/src/ASPopInstruction.h; sourceTree = SOURCE_ROOT; };
+		D313884A16DB02CB003805C2 /* ASShlInstruction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASShlInstruction.h; path = AssemblyKit/src/ASShlInstruction.h; sourceTree = SOURCE_ROOT; };
+		D313884C16DB02D0003805C2 /* ASShrInstruction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASShrInstruction.h; path = AssemblyKit/src/ASShrInstruction.h; sourceTree = SOURCE_ROOT; };
+		D313885016DB04E2003805C2 /* ASInstruction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASInstruction.h; path = AssemblyKit/src/ASInstruction.h; sourceTree = SOURCE_ROOT; };
+		D31C53E516E3EB8E00F66A78 /* ASEFlagsRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASEFlagsRegister.m; path = AssemblyKit/src/ASEFlagsRegister.m; sourceTree = SOURCE_ROOT; };
+		D31C53E816E3EBA200F66A78 /* ASEFlagsRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASEFlagsRegister.h; path = AssemblyKit/include/AssemblyKit/ASEFlagsRegister.h; sourceTree = SOURCE_ROOT; };
+		D31C53EA16E3ED6C00F66A78 /* EFlagTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFlagTests.h; sourceTree = "<group>"; };
+		D31C53EB16E3ED6C00F66A78 /* EFlagTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFlagTests.m; sourceTree = "<group>"; };
+		D31C53EE16E3FACF00F66A78 /* ASEFlagsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASEFlagsViewController.h; sourceTree = "<group>"; };
+		D31C53EF16E3FACF00F66A78 /* ASEFlagsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASEFlagsViewController.m; sourceTree = "<group>"; };
+		D31C53F316E3FAFA00F66A78 /* ASEFlagsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASEFlagsView.h; sourceTree = "<group>"; };
+		D31C53F416E3FAFA00F66A78 /* ASEFlagsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASEFlagsView.m; sourceTree = "<group>"; };
+		D31C53F716E3FC8800F66A78 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ASEFlagsViewController.xib; sourceTree = "<group>"; };
+		D329601F16DD3E800021AF53 /* ASMemoryLocationListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASMemoryLocationListItem.h; sourceTree = "<group>"; };
+		D329602016DD3E800021AF53 /* ASMemoryLocationListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASMemoryLocationListItem.m; sourceTree = "<group>"; };
+		D33DA28716D00A2A007D364A /* Hilascene.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hilascene.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D33DA28A16D00A2A007D364A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D33DA28D16D00A2A007D364A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D33DA28F16D00A2A007D364A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D33DA29216D00A2A007D364A /* Assembly-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Assembly-Info.plist"; sourceTree = "<group>"; };
+		D33DA29416D00A2A007D364A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D33DA29616D00A2A007D364A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D33DA29816D00A2A007D364A /* Assembly-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Assembly-Prefix.pch"; sourceTree = "<group>"; };
+		D33DA29A16D00A2A007D364A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		D33DA29C16D00A2A007D364A /* ASDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASDocument.h; sourceTree = "<group>"; };
+		D33DA29D16D00A2A007D364A /* ASDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASDocument.m; sourceTree = "<group>"; };
+		D33DA2A016D00A2A007D364A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ASDocument.xib; sourceTree = "<group>"; };
+		D33DA2A316D00A2A007D364A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D33DA2AA16D00A2A007D364A /* AssemblyTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssemblyTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D33DA2AB16D00A2A007D364A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D33DA2B216D00A2A007D364A /* AssemblyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AssemblyTests-Info.plist"; sourceTree = "<group>"; };
+		D33DA2B416D00A2A007D364A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D33DA2B616D00A2A007D364A /* ConstantTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConstantTests.h; sourceTree = "<group>"; };
+		D33DA2B716D00A2A007D364A /* ConstantTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConstantTests.m; sourceTree = "<group>"; };
+		D33DA2C116D00A67007D364A /* ASRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASRegisterView.h; sourceTree = "<group>"; };
+		D33DA2C216D00A67007D364A /* ASRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASRegisterView.m; sourceTree = "<group>"; };
+		D370753016D0831D0040BB01 /* ASTestScaffold.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASTestScaffold.h; sourceTree = "<group>"; };
+		D370754016D094F90040BB01 /* RegisterTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterTests.h; sourceTree = "<group>"; };
+		D370754116D094F90040BB01 /* RegisterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterTests.m; sourceTree = "<group>"; };
+		D3715E8316D692BD003B57EE /* AssemblyKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AssemblyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3715E8D16D692BE003B57EE /* AssemblyKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AssemblyKit-Info.plist"; sourceTree = "<group>"; };
+		D3715E8F16D692BE003B57EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D3715E9116D692BE003B57EE /* AssemblyKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AssemblyKit-Prefix.pch"; sourceTree = "<group>"; };
+		D3715EC216D694E7003B57EE /* ASContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASContext.h; path = AssemblyKit/include/AssemblyKit/ASContext.h; sourceTree = SOURCE_ROOT; };
+		D3715EC416D694EC003B57EE /* ASProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASProgram.h; path = AssemblyKit/include/AssemblyKit/ASProgram.h; sourceTree = SOURCE_ROOT; };
+		D3715EC616D694F1003B57EE /* ASProgramRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASProgramRunner.h; path = AssemblyKit/include/AssemblyKit/ASProgramRunner.h; sourceTree = SOURCE_ROOT; };
+		D3715ECA16D69571003B57EE /* AssemblyKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AssemblyKit.h; path = include/AssemblyKit/AssemblyKit.h; sourceTree = "<group>"; };
+		D3715ECD16D695D8003B57EE /* ASProgramAssembler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASProgramAssembler.h; path = AssemblyKit/src/ASProgramAssembler.h; sourceTree = SOURCE_ROOT; };
+		D3715ECE16D695D8003B57EE /* ASProgramAssembler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASProgramAssembler.m; path = AssemblyKit/src/ASProgramAssembler.m; sourceTree = SOURCE_ROOT; };
+		D3715ED116D6962C003B57EE /* ASProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASProgram.m; path = AssemblyKit/src/ASProgram.m; sourceTree = SOURCE_ROOT; };
+		D3715ED316D69631003B57EE /* ASProgramRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASProgramRunner.m; path = AssemblyKit/src/ASProgramRunner.m; sourceTree = SOURCE_ROOT; };
+		D3715ED516D69648003B57EE /* ASStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASStatement.m; path = AssemblyKit/src/ASStatement.m; sourceTree = SOURCE_ROOT; };
+		D3715ED716D6964D003B57EE /* ASContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASContext.m; path = AssemblyKit/src/ASContext.m; sourceTree = SOURCE_ROOT; };
+		D3715EDD16D69753003B57EE /* ASRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASRegister.h; path = AssemblyKit/include/AssemblyKit/ASRegister.h; sourceTree = SOURCE_ROOT; };
+		D3715EE116D69767003B57EE /* AS8BitRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AS8BitRegister.h; path = AssemblyKit/src/AS8BitRegister.h; sourceTree = SOURCE_ROOT; };
+		D3715EE316D6976C003B57EE /* AS16BitRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AS16BitRegister.h; path = AssemblyKit/src/AS16BitRegister.h; sourceTree = SOURCE_ROOT; };
+		D3715EE716D6977A003B57EE /* ASSubRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASSubRegister.h; path = AssemblyKit/src/ASSubRegister.h; sourceTree = SOURCE_ROOT; };
+		D3715EE916D69781003B57EE /* ASSubRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASSubRegister.m; path = AssemblyKit/src/ASSubRegister.m; sourceTree = SOURCE_ROOT; };
+		D3715EEB16D6978D003B57EE /* AS8BitRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AS8BitRegister.m; path = AssemblyKit/src/AS8BitRegister.m; sourceTree = SOURCE_ROOT; };
+		D3715EEC16D6978D003B57EE /* AS16BitRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AS16BitRegister.m; path = AssemblyKit/src/AS16BitRegister.m; sourceTree = SOURCE_ROOT; };
+		D3715EF116D697B3003B57EE /* ASValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASValue.m; path = AssemblyKit/src/ASValue.m; sourceTree = SOURCE_ROOT; };
+		D3715EF216D697B3003B57EE /* ASExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASExpression.m; path = AssemblyKit/src/ASExpression.m; sourceTree = SOURCE_ROOT; };
+		D3715EF316D697B3003B57EE /* ASRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASRegister.m; path = AssemblyKit/src/ASRegister.m; sourceTree = SOURCE_ROOT; };
+		D3715EF716D697D4003B57EE /* ASInstruction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASInstruction.m; path = AssemblyKit/src/ASInstruction.m; sourceTree = SOURCE_ROOT; };
+		D3715F0F16D6984E003B57EE /* ASAndInstruction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASAndInstruction.m; path = AssemblyKit/src/ASAndInstruction.m; sourceTree = SOURCE_ROOT; };
+		D3715F1016D6984E003B57EE /* ASDyadicInstruction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASDyadicInstruction.m; path = AssemblyKit/src/ASDyadicInstruction.m; sourceTree = SOURCE_ROOT; };
+		D3715F1116D6984E003B57EE /* ASMovInstruction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASMovInstruction.m; path = AssemblyKit/src/ASMovInstruction.m; sourceTree = SOURCE_ROOT; };
+		D3715F1216D6984E003B57EE /* ASNegInstruction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASNegInstruction.m; path = AssemblyKit/src/ASNegInstruction.m; sourceTree = SOURCE_ROOT; };
+		D3715F1316D6984E003B57EE /* ASNotInstruction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASNotInstruction.m; path = AssemblyKit/src/ASNotInstruction.m; sourceTree = SOURCE_ROOT; };
+		D3715F1416D6984E003B57EE /* ASOrInstruction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASOrInstruction.m; path = AssemblyKit/src/ASOrInstruction.m; sourceTree = SOURCE_ROOT; };
+		D3715F1516D6984E003B57EE /* ASShlInstruction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASShlInstruction.m; path = AssemblyKit/src/ASShlInstruction.m; sourceTree = SOURCE_ROOT; };
+		D3715F1616D6984E003B57EE /* ASShrInstruction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASShrInstruction.m; path = AssemblyKit/src/ASShrInstruction.m; sourceTree = SOURCE_ROOT; };
+		D3715F1716D6984E003B57EE /* ASUnaryInstruction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASUnaryInstruction.m; path = AssemblyKit/src/ASUnaryInstruction.m; sourceTree = SOURCE_ROOT; };
+		D3715F1816D6984E003B57EE /* ASXorInstruction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASXorInstruction.m; path = AssemblyKit/src/ASXorInstruction.m; sourceTree = SOURCE_ROOT; };
+		D3715F2316D6988B003B57EE /* ASPutInstruction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASPutInstruction.m; path = AssemblyKit/src/ASPutInstruction.m; sourceTree = SOURCE_ROOT; };
+		D3715F2516D69897003B57EE /* assembly.g */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = assembly.g; sourceTree = "<group>"; };
+		D3A297A816D2B64900179675 /* ASDocumentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDocumentController.h; sourceTree = "<group>"; };
+		D3A297A916D2B64900179675 /* ASDocumentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDocumentController.m; sourceTree = "<group>"; };
+		D3CC6E5916E464F10039EE6E /* IDERoundToolbarButton_Pause_Active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IDERoundToolbarButton_Pause_Active.png; sourceTree = "<group>"; };
+		D3CC6E5A16E464F10039EE6E /* IDERoundToolbarButton_Pause_Active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IDERoundToolbarButton_Pause_Active@2x.png"; sourceTree = "<group>"; };
+		D3CC6E5F16E464F10039EE6E /* IDERoundToolbarButton_Run_Active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IDERoundToolbarButton_Run_Active.png; sourceTree = "<group>"; };
+		D3CC6E6016E464F10039EE6E /* IDERoundToolbarButton_Run_Active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IDERoundToolbarButton_Run_Active@2x.png"; sourceTree = "<group>"; };
+		D3CC6E6516E464F10039EE6E /* IDERoundToolbarButton_Stop_Active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IDERoundToolbarButton_Stop_Active.png; sourceTree = "<group>"; };
+		D3CC6E6616E464F10039EE6E /* IDERoundToolbarButton_Stop_Active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IDERoundToolbarButton_Stop_Active@2x.png"; sourceTree = "<group>"; };
+		D3CF3FEA16D85AB10097B667 /* ASMemoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASMemoryViewController.h; sourceTree = "<group>"; };
+		D3CF3FEB16D85AB10097B667 /* ASMemoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASMemoryViewController.m; sourceTree = "<group>"; };
+		D3CF3FEF16D85AD90097B667 /* ASMemoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASMemoryView.h; sourceTree = "<group>"; };
+		D3CF3FF016D85AD90097B667 /* ASMemoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASMemoryView.m; sourceTree = "<group>"; };
+		D3CF3FF316D866FB0097B667 /* ASPushInstruction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPushInstruction.m; sourceTree = "<group>"; };
+		D3CF3FF816D873A50097B667 /* ASPopInstruction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPopInstruction.m; sourceTree = "<group>"; };
+		D3D7A27216D00BB2003C901F /* TDAppKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TDAppKit.xcodeproj; path = lib/TDAppKit/TDAppKit.xcodeproj; sourceTree = "<group>"; };
+		D3D7A28416D053D5003C901F /* ASRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASRegisterViewController.h; sourceTree = "<group>"; };
+		D3D7A28516D053D5003C901F /* ASRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASRegisterViewController.m; sourceTree = "<group>"; };
+		D3D7A28916D055D8003C901F /* ASSourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSourceViewController.h; sourceTree = "<group>"; };
+		D3D7A28A16D055D8003C901F /* ASSourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSourceViewController.m; sourceTree = "<group>"; };
+		D3D7A28E16D0560C003C901F /* ASLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASLogViewController.h; sourceTree = "<group>"; };
+		D3D7A28F16D0560C003C901F /* ASLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASLogViewController.m; sourceTree = "<group>"; };
+		D3F60DDB16DD636700FAC43C /* ASMemoryHeaderListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASMemoryHeaderListItem.h; sourceTree = "<group>"; };
+		D3F60DDC16DD636700FAC43C /* ASMemoryHeaderListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASMemoryHeaderListItem.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D33DA28416D00A2A007D364A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D33DA28B16D00A2A007D364A /* Cocoa.framework in Frameworks */,
+				D3715EBE16D69362003B57EE /* AssemblyKit.framework in Frameworks */,
+				D3D7A28016D00BC1003C901F /* TDAppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D33DA2A616D00A2A007D364A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3596B3116D9D8E50053469D /* Cocoa.framework in Frameworks */,
+				D3596B3216D9D8E60053469D /* SenTestingKit.framework in Frameworks */,
+				D3715EC116D6941E003B57EE /* AssemblyKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3715E7F16D692BD003B57EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D30C7B7116D6ACBE0000A5E0 /* Foundation.framework in Frameworks */,
+				D3715EBD16D69328003B57EE /* ParseKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D30522F016D15E7F00A8E114 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D305230016D15E8000A8E114 /* ParseKit.framework */,
+				D305230216D15E8000A8E114 /* JSParseKit.framework */,
+				D305230416D15E8000A8E114 /* libparsekit.a */,
+				D305230616D15E8000A8E114 /* Tests.octest */,
+				D305230816D15E8000A8E114 /* DemoApp.app */,
+				D305230A16D15E8000A8E114 /* DebugApp.app */,
+				D305230C16D15E8000A8E114 /* JSDemoApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D305BBA816D988920089AB8C /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				D313883016DB024D003805C2 /* ASAddressExpression.h */,
+				D305BBAA16D988BE0089AB8C /* ASAddressExpression.m */,
+				D308147416DA842100E4E756 /* ASAddressRegisterIndirectExpression.h */,
+				D30814CF16DAEB3E00E4E756 /* ASAddressRegisterIndirectExpression.m */,
+				D308147816DA879500E4E756 /* ASAddressIndexedExpression.h */,
+				D308147916DA879500E4E756 /* ASAddressIndexedExpression.m */,
+			);
+			name = Memory;
+			sourceTree = "<group>";
+		};
+		D30814A016DADB2800E4E756 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				D30814A216DADB7600E4E756 /* ASRegisterExpression.h */,
+				D30814A116DADB7600E4E756 /* ASRegisterExpression.m */,
+				D30814A916DADC9500E4E756 /* AS32BitRegisterExpression.h */,
+				D30814AA16DADC9500E4E756 /* AS32BitRegisterExpression.m */,
+				D30814AD16DADCDC00E4E756 /* AS16BitRegisterExpression.h */,
+				D30814AE16DADCDC00E4E756 /* AS16BitRegisterExpression.m */,
+				D30814B116DADD0C00E4E756 /* AS8BitRegisterExpression.h */,
+				D30814B216DADD0C00E4E756 /* AS8BitRegisterExpression.m */,
+			);
+			name = Register;
+			sourceTree = "<group>";
+		};
+		D30C7B6F16D6AB4C0000A5E0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D33DA2A216D00A2A007D364A /* MainMenu.xib */,
+				D3A297A816D2B64900179675 /* ASDocumentController.h */,
+				D3A297A916D2B64900179675 /* ASDocumentController.m */,
+				D33DA29C16D00A2A007D364A /* ASDocument.h */,
+				D33DA29D16D00A2A007D364A /* ASDocument.m */,
+				D33DA29F16D00A2A007D364A /* ASDocument.xib */,
+				D3F60DE616DD6C8F00FAC43C /* RegisterView */,
+				D31C53ED16E3FAA300F66A78 /* EFlagsView */,
+				D3F60DE716DD6C9700FAC43C /* MemoryView */,
+				D3F60DE816DD6CA300FAC43C /* SourceView */,
+				D3F60DE916DD6CA900FAC43C /* LogView */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		D313885416DB05A1003805C2 /* Registers */ = {
+			isa = PBXGroup;
+			children = (
+				D3715EE716D6977A003B57EE /* ASSubRegister.h */,
+				D3715EE916D69781003B57EE /* ASSubRegister.m */,
+				D3715EE316D6976C003B57EE /* AS16BitRegister.h */,
+				D3715EEC16D6978D003B57EE /* AS16BitRegister.m */,
+				D3715EE116D69767003B57EE /* AS8BitRegister.h */,
+				D3715EEB16D6978D003B57EE /* AS8BitRegister.m */,
+			);
+			name = Registers;
+			sourceTree = "<group>";
+		};
+		D31C53ED16E3FAA300F66A78 /* EFlagsView */ = {
+			isa = PBXGroup;
+			children = (
+				D31C53EE16E3FACF00F66A78 /* ASEFlagsViewController.h */,
+				D31C53EF16E3FACF00F66A78 /* ASEFlagsViewController.m */,
+				D31C53F616E3FC8800F66A78 /* ASEFlagsViewController.xib */,
+				D31C53F316E3FAFA00F66A78 /* ASEFlagsView.h */,
+				D31C53F416E3FAFA00F66A78 /* ASEFlagsView.m */,
+			);
+			name = EFlagsView;
+			sourceTree = "<group>";
+		};
+		D326C3DC16D07AE10017A4EE /* Instructions */ = {
+			isa = PBXGroup;
+			children = (
+				D313885016DB04E2003805C2 /* ASInstruction.h */,
+				D3715EF716D697D4003B57EE /* ASInstruction.m */,
+				D313883416DB0270003805C2 /* ASUnaryInstruction.h */,
+				D3715F1716D6984E003B57EE /* ASUnaryInstruction.m */,
+				D313883616DB0278003805C2 /* ASNotInstruction.h */,
+				D3715F1316D6984E003B57EE /* ASNotInstruction.m */,
+				D313883816DB027C003805C2 /* ASNegInstruction.h */,
+				D3715F1216D6984E003B57EE /* ASNegInstruction.m */,
+				D313883A16DB0283003805C2 /* ASDyadicInstruction.h */,
+				D3715F1016D6984E003B57EE /* ASDyadicInstruction.m */,
+				D313883C16DB028E003805C2 /* ASMovInstruction.h */,
+				D3715F1116D6984E003B57EE /* ASMovInstruction.m */,
+				D313883E16DB029E003805C2 /* ASAndInstruction.h */,
+				D3715F0F16D6984E003B57EE /* ASAndInstruction.m */,
+				D313884016DB02A4003805C2 /* ASOrInstruction.h */,
+				D3715F1416D6984E003B57EE /* ASOrInstruction.m */,
+				D313884216DB02A8003805C2 /* ASXorInstruction.h */,
+				D3715F1816D6984E003B57EE /* ASXorInstruction.m */,
+				D313884416DB02AD003805C2 /* ASPutInstruction.h */,
+				D3715F2316D6988B003B57EE /* ASPutInstruction.m */,
+				D313884A16DB02CB003805C2 /* ASShlInstruction.h */,
+				D3715F1516D6984E003B57EE /* ASShlInstruction.m */,
+				D313884C16DB02D0003805C2 /* ASShrInstruction.h */,
+				D3715F1616D6984E003B57EE /* ASShrInstruction.m */,
+				D313884616DB02B3003805C2 /* ASPushInstruction.h */,
+				D3CF3FF316D866FB0097B667 /* ASPushInstruction.m */,
+				D313884816DB02C3003805C2 /* ASPopInstruction.h */,
+				D3CF3FF816D873A50097B667 /* ASPopInstruction.m */,
+			);
+			name = Instructions;
+			path = ../Assembly;
+			sourceTree = "<group>";
+		};
+		D33DA27E16D00A2A007D364A = {
+			isa = PBXGroup;
+			children = (
+				D30522EF16D15E7F00A8E114 /* ParseKit.xcodeproj */,
+				D3D7A27216D00BB2003C901F /* TDAppKit.xcodeproj */,
+				D3715E8B16D692BD003B57EE /* AssemblyKit */,
+				D33DA29016D00A2A007D364A /* AssemblyApp */,
+				D33DA2B016D00A2A007D364A /* AssemblyTests */,
+				D33DA28916D00A2A007D364A /* Lib */,
+				D33DA28816D00A2A007D364A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D33DA28816D00A2A007D364A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D33DA28716D00A2A007D364A /* Hilascene.app */,
+				D33DA2AA16D00A2A007D364A /* AssemblyTests.octest */,
+				D3715E8316D692BD003B57EE /* AssemblyKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D33DA28916D00A2A007D364A /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				D33DA28A16D00A2A007D364A /* Cocoa.framework */,
+				D33DA2AB16D00A2A007D364A /* SenTestingKit.framework */,
+				D33DA28D16D00A2A007D364A /* AppKit.framework */,
+				D33DA28F16D00A2A007D364A /* Foundation.framework */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		D33DA29016D00A2A007D364A /* AssemblyApp */ = {
+			isa = PBXGroup;
+			children = (
+				D30C7B6F16D6AB4C0000A5E0 /* Source */,
+				D33DA29116D00A2A007D364A /* Supporting Files */,
+			);
+			name = AssemblyApp;
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		D33DA29116D00A2A007D364A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3CC6E5816E464F10039EE6E /* Resources */,
+				D33DA29216D00A2A007D364A /* Assembly-Info.plist */,
+				D33DA29316D00A2A007D364A /* InfoPlist.strings */,
+				D33DA29616D00A2A007D364A /* main.m */,
+				D33DA29816D00A2A007D364A /* Assembly-Prefix.pch */,
+				D33DA29916D00A2A007D364A /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D33DA2B016D00A2A007D364A /* AssemblyTests */ = {
+			isa = PBXGroup;
+			children = (
+				D370753016D0831D0040BB01 /* ASTestScaffold.h */,
+				D30C7B9B16D8218B0000A5E0 /* MemoryTests.h */,
+				D30C7B9C16D8218B0000A5E0 /* MemoryTests.m */,
+				D33DA2B616D00A2A007D364A /* ConstantTests.h */,
+				D33DA2B716D00A2A007D364A /* ConstantTests.m */,
+				D370754016D094F90040BB01 /* RegisterTests.h */,
+				D370754116D094F90040BB01 /* RegisterTests.m */,
+				D305233616D1B78C00A8E114 /* InstructionTests.h */,
+				D305233716D1B78C00A8E114 /* InstructionTests.m */,
+				D31C53EA16E3ED6C00F66A78 /* EFlagTests.h */,
+				D31C53EB16E3ED6C00F66A78 /* EFlagTests.m */,
+				D33DA2B116D00A2A007D364A /* Supporting Files */,
+			);
+			path = AssemblyTests;
+			sourceTree = "<group>";
+		};
+		D33DA2B116D00A2A007D364A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D33DA2B216D00A2A007D364A /* AssemblyTests-Info.plist */,
+				D33DA2B316D00A2A007D364A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D370754F16D154450040BB01 /* Context */ = {
+			isa = PBXGroup;
+			children = (
+				D3715EC216D694E7003B57EE /* ASContext.h */,
+				D3715ED716D6964D003B57EE /* ASContext.m */,
+				D313882816DB015C003805C2 /* ASStorage.h */,
+				D30814E416DAF43900E4E756 /* ASStorage.m */,
+				D305BBB316D9B5300089AB8C /* ASMutableStorage.h */,
+				D305BBB016D9B4A60089AB8C /* ASMutableStorage.m */,
+				D3715EDD16D69753003B57EE /* ASRegister.h */,
+				D3715EF316D697B3003B57EE /* ASRegister.m */,
+				D31C53E816E3EBA200F66A78 /* ASEFlagsRegister.h */,
+				D31C53E516E3EB8E00F66A78 /* ASEFlagsRegister.m */,
+				D313885416DB05A1003805C2 /* Registers */,
+			);
+			name = Context;
+			path = ../Assembly;
+			sourceTree = "<group>";
+		};
+		D3715E8B16D692BD003B57EE /* AssemblyKit */ = {
+			isa = PBXGroup;
+			children = (
+				D3715ECA16D69571003B57EE /* AssemblyKit.h */,
+				D305BB9A16D963CA0089AB8C /* ASTypes.h */,
+				D305BBA416D964470089AB8C /* ASUtils.h */,
+				D305BBA616D964970089AB8C /* ASUtils.m */,
+				D370754F16D154450040BB01 /* Context */,
+				D3EED06E16D2BE09003BA68F /* Program */,
+				D3D7A2B016D06AFF003C901F /* Expr */,
+				D326C3DC16D07AE10017A4EE /* Instructions */,
+				D3715E8C16D692BE003B57EE /* Supporting Files */,
+			);
+			path = AssemblyKit;
+			sourceTree = "<group>";
+		};
+		D3715E8C16D692BE003B57EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3715F2516D69897003B57EE /* assembly.g */,
+				D3715E8D16D692BE003B57EE /* AssemblyKit-Info.plist */,
+				D3715E8E16D692BE003B57EE /* InfoPlist.strings */,
+				D3715E9116D692BE003B57EE /* AssemblyKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3CC6E5816E464F10039EE6E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D30AD48F16E50DD5004BE616 /* SEClearHistoryImage.tiff */,
+				D30AD49016E50DD5004BE616 /* SECompileScriptImage.tiff */,
+				D30AD49116E50DD5004BE616 /* SECompileScriptImage@2x.png */,
+				D30AD49216E50DD5004BE616 /* SEContinueImage.tiff */,
+				D30AD49316E50DD5004BE616 /* SERestartImage.tiff */,
+				D30AD49416E50DD5004BE616 /* SERunScriptImage.tiff */,
+				D30AD49516E50DD5004BE616 /* SEStopScriptImage.tiff */,
+				D3CC6E5916E464F10039EE6E /* IDERoundToolbarButton_Pause_Active.png */,
+				D3CC6E5A16E464F10039EE6E /* IDERoundToolbarButton_Pause_Active@2x.png */,
+				D3CC6E5F16E464F10039EE6E /* IDERoundToolbarButton_Run_Active.png */,
+				D3CC6E6016E464F10039EE6E /* IDERoundToolbarButton_Run_Active@2x.png */,
+				D3CC6E6516E464F10039EE6E /* IDERoundToolbarButton_Stop_Active.png */,
+				D3CC6E6616E464F10039EE6E /* IDERoundToolbarButton_Stop_Active@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D3D7A27316D00BB2003C901F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3D7A27916D00BB3003C901F /* TDAppKit.framework */,
+				D3D7A27B16D00BB3003C901F /* ListViewDemoApp.app */,
+				D3D7A27D16D00BB3003C901F /* FooBarDemoApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3D7A2B016D06AFF003C901F /* Expr */ = {
+			isa = PBXGroup;
+			children = (
+				D313882C16DB0237003805C2 /* ASExpression.h */,
+				D3715EF216D697B3003B57EE /* ASExpression.m */,
+				D313882E16DB023D003805C2 /* ASValue.h */,
+				D3715EF116D697B3003B57EE /* ASValue.m */,
+				D30814A616DADB9500E4E756 /* ASMutableStorageExpression.h */,
+				D30814A516DADB9500E4E756 /* ASMutableStorageExpression.m */,
+				D30814A016DADB2800E4E756 /* Register */,
+				D305BBA816D988920089AB8C /* Memory */,
+			);
+			name = Expr;
+			path = ../Assembly;
+			sourceTree = "<group>";
+		};
+		D3EED06E16D2BE09003BA68F /* Program */ = {
+			isa = PBXGroup;
+			children = (
+				D3715EC616D694F1003B57EE /* ASProgramRunner.h */,
+				D3715ED316D69631003B57EE /* ASProgramRunner.m */,
+				D3715ECD16D695D8003B57EE /* ASProgramAssembler.h */,
+				D3715ECE16D695D8003B57EE /* ASProgramAssembler.m */,
+				D3715EC416D694EC003B57EE /* ASProgram.h */,
+				D3715ED116D6962C003B57EE /* ASProgram.m */,
+				D313882A16DB022C003805C2 /* ASStatement.h */,
+				D3715ED516D69648003B57EE /* ASStatement.m */,
+			);
+			name = Program;
+			path = ../Assembly;
+			sourceTree = "<group>";
+		};
+		D3F60DE616DD6C8F00FAC43C /* RegisterView */ = {
+			isa = PBXGroup;
+			children = (
+				D3D7A28416D053D5003C901F /* ASRegisterViewController.h */,
+				D3D7A28516D053D5003C901F /* ASRegisterViewController.m */,
+				D30D8D2016D9367D00D4B7F7 /* ASRegisterViewController.xib */,
+				D33DA2C116D00A67007D364A /* ASRegisterView.h */,
+				D33DA2C216D00A67007D364A /* ASRegisterView.m */,
+			);
+			name = RegisterView;
+			sourceTree = "<group>";
+		};
+		D3F60DE716DD6C9700FAC43C /* MemoryView */ = {
+			isa = PBXGroup;
+			children = (
+				D3CF3FEA16D85AB10097B667 /* ASMemoryViewController.h */,
+				D3CF3FEB16D85AB10097B667 /* ASMemoryViewController.m */,
+				D30D8D2616D9369100D4B7F7 /* ASMemoryViewController.xib */,
+				D329601F16DD3E800021AF53 /* ASMemoryLocationListItem.h */,
+				D329602016DD3E800021AF53 /* ASMemoryLocationListItem.m */,
+				D3F60DDB16DD636700FAC43C /* ASMemoryHeaderListItem.h */,
+				D3F60DDC16DD636700FAC43C /* ASMemoryHeaderListItem.m */,
+				D3CF3FEF16D85AD90097B667 /* ASMemoryView.h */,
+				D3CF3FF016D85AD90097B667 /* ASMemoryView.m */,
+			);
+			name = MemoryView;
+			sourceTree = "<group>";
+		};
+		D3F60DE816DD6CA300FAC43C /* SourceView */ = {
+			isa = PBXGroup;
+			children = (
+				D3D7A28916D055D8003C901F /* ASSourceViewController.h */,
+				D3D7A28A16D055D8003C901F /* ASSourceViewController.m */,
+				D30D8D1516D9365E00D4B7F7 /* ASSourceViewController.xib */,
+			);
+			name = SourceView;
+			sourceTree = "<group>";
+		};
+		D3F60DE916DD6CA900FAC43C /* LogView */ = {
+			isa = PBXGroup;
+			children = (
+				D3D7A28E16D0560C003C901F /* ASLogViewController.h */,
+				D3D7A28F16D0560C003C901F /* ASLogViewController.m */,
+				D30D8D2316D9368500D4B7F7 /* ASLogViewController.xib */,
+			);
+			name = LogView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D3715E8016D692BD003B57EE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3715EC316D694E7003B57EE /* ASContext.h in Headers */,
+				D3715EC516D694EC003B57EE /* ASProgram.h in Headers */,
+				D3715EC716D694F1003B57EE /* ASProgramRunner.h in Headers */,
+				D3715ECB16D69578003B57EE /* AssemblyKit.h in Headers */,
+				D3715ECF16D695D8003B57EE /* ASProgramAssembler.h in Headers */,
+				D3715EDE16D69753003B57EE /* ASRegister.h in Headers */,
+				D3715EE216D69767003B57EE /* AS8BitRegister.h in Headers */,
+				D3715EE416D6976C003B57EE /* AS16BitRegister.h in Headers */,
+				D3715EE816D6977A003B57EE /* ASSubRegister.h in Headers */,
+				D305BB9B16D963CA0089AB8C /* ASTypes.h in Headers */,
+				D305BBA516D964470089AB8C /* ASUtils.h in Headers */,
+				D305BBB416D9B5310089AB8C /* ASMutableStorage.h in Headers */,
+				D308147616DA842100E4E756 /* ASAddressRegisterIndirectExpression.h in Headers */,
+				D308147A16DA879500E4E756 /* ASAddressIndexedExpression.h in Headers */,
+				D30814A416DADB7600E4E756 /* ASRegisterExpression.h in Headers */,
+				D30814A816DADB9500E4E756 /* ASMutableStorageExpression.h in Headers */,
+				D30814AB16DADC9500E4E756 /* AS32BitRegisterExpression.h in Headers */,
+				D30814AF16DADCDD00E4E756 /* AS16BitRegisterExpression.h in Headers */,
+				D30814B316DADD0C00E4E756 /* AS8BitRegisterExpression.h in Headers */,
+				D313882916DB015D003805C2 /* ASStorage.h in Headers */,
+				D313882B16DB022C003805C2 /* ASStatement.h in Headers */,
+				D313882D16DB0237003805C2 /* ASExpression.h in Headers */,
+				D313882F16DB023D003805C2 /* ASValue.h in Headers */,
+				D313883116DB024D003805C2 /* ASAddressExpression.h in Headers */,
+				D313883516DB0270003805C2 /* ASUnaryInstruction.h in Headers */,
+				D313883716DB0278003805C2 /* ASNotInstruction.h in Headers */,
+				D313883916DB027C003805C2 /* ASNegInstruction.h in Headers */,
+				D313883B16DB0283003805C2 /* ASDyadicInstruction.h in Headers */,
+				D313883D16DB028E003805C2 /* ASMovInstruction.h in Headers */,
+				D313883F16DB029E003805C2 /* ASAndInstruction.h in Headers */,
+				D313884116DB02A4003805C2 /* ASOrInstruction.h in Headers */,
+				D313884316DB02A8003805C2 /* ASXorInstruction.h in Headers */,
+				D313884516DB02AD003805C2 /* ASPutInstruction.h in Headers */,
+				D313884716DB02B3003805C2 /* ASPushInstruction.h in Headers */,
+				D313884916DB02C3003805C2 /* ASPopInstruction.h in Headers */,
+				D313884B16DB02CB003805C2 /* ASShlInstruction.h in Headers */,
+				D313884D16DB02D0003805C2 /* ASShrInstruction.h in Headers */,
+				D313885116DB04E2003805C2 /* ASInstruction.h in Headers */,
+				D31C53E916E3EBA200F66A78 /* ASEFlagsRegister.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D33DA28616D00A2A007D364A /* AssemblyApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D33DA2BB16D00A2A007D364A /* Build configuration list for PBXNativeTarget "AssemblyApp" */;
+			buildPhases = (
+				D33DA28316D00A2A007D364A /* Sources */,
+				D33DA28416D00A2A007D364A /* Frameworks */,
+				D33DA28516D00A2A007D364A /* Resources */,
+				D303323416D2B9E600EB128F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3715EB916D692F7003B57EE /* PBXTargetDependency */,
+				D3D7A27F16D00BBC003C901F /* PBXTargetDependency */,
+			);
+			name = AssemblyApp;
+			productName = Assembly;
+			productReference = D33DA28716D00A2A007D364A /* Hilascene.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D33DA2A916D00A2A007D364A /* AssemblyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D33DA2BE16D00A2A007D364A /* Build configuration list for PBXNativeTarget "AssemblyTests" */;
+			buildPhases = (
+				D33DA2A516D00A2A007D364A /* Sources */,
+				D33DA2A616D00A2A007D364A /* Frameworks */,
+				D33DA2A716D00A2A007D364A /* Resources */,
+				D33DA2A816D00A2A007D364A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3715EC016D69417003B57EE /* PBXTargetDependency */,
+			);
+			name = AssemblyTests;
+			productName = AssemblyTests;
+			productReference = D33DA2AA16D00A2A007D364A /* AssemblyTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		D3715E8216D692BD003B57EE /* AssemblyKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3715E9F16D692BE003B57EE /* Build configuration list for PBXNativeTarget "AssemblyKit" */;
+			buildPhases = (
+				D3715E7E16D692BD003B57EE /* Sources */,
+				D3715E7F16D692BD003B57EE /* Frameworks */,
+				D3715E8016D692BD003B57EE /* Headers */,
+				D3715E8116D692BD003B57EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3715EBC16D6931F003B57EE /* PBXTargetDependency */,
+			);
+			name = AssemblyKit;
+			productName = AssemblyKit;
+			productReference = D3715E8316D692BD003B57EE /* AssemblyKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D33DA27F16D00A2A007D364A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AS;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Todd Ditchendorf";
+			};
+			buildConfigurationList = D33DA28216D00A2A007D364A /* Build configuration list for PBXProject "Assembly" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D33DA27E16D00A2A007D364A;
+			productRefGroup = D33DA28816D00A2A007D364A /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D30522F016D15E7F00A8E114 /* Products */;
+					ProjectRef = D30522EF16D15E7F00A8E114 /* ParseKit.xcodeproj */;
+				},
+				{
+					ProductGroup = D3D7A27316D00BB2003C901F /* Products */;
+					ProjectRef = D3D7A27216D00BB2003C901F /* TDAppKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				D3715E8216D692BD003B57EE /* AssemblyKit */,
+				D33DA28616D00A2A007D364A /* AssemblyApp */,
+				D33DA2A916D00A2A007D364A /* AssemblyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D305230016D15E8000A8E114 /* ParseKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ParseKit.framework;
+			remoteRef = D30522FF16D15E8000A8E114 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D305230216D15E8000A8E114 /* JSParseKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JSParseKit.framework;
+			remoteRef = D305230116D15E8000A8E114 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D305230416D15E8000A8E114 /* libparsekit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libparsekit.a;
+			remoteRef = D305230316D15E8000A8E114 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D305230616D15E8000A8E114 /* Tests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Tests.octest;
+			remoteRef = D305230516D15E8000A8E114 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D305230816D15E8000A8E114 /* DemoApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = DemoApp.app;
+			remoteRef = D305230716D15E8000A8E114 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D305230A16D15E8000A8E114 /* DebugApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = DebugApp.app;
+			remoteRef = D305230916D15E8000A8E114 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D305230C16D15E8000A8E114 /* JSDemoApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = JSDemoApp.app;
+			remoteRef = D305230B16D15E8000A8E114 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D3D7A27916D00BB3003C901F /* TDAppKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TDAppKit.framework;
+			remoteRef = D3D7A27816D00BB3003C901F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D3D7A27B16D00BB3003C901F /* ListViewDemoApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ListViewDemoApp.app;
+			remoteRef = D3D7A27A16D00BB3003C901F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D3D7A27D16D00BB3003C901F /* FooBarDemoApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = FooBarDemoApp.app;
+			remoteRef = D3D7A27C16D00BB3003C901F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D33DA28516D00A2A007D364A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D33DA29516D00A2A007D364A /* InfoPlist.strings in Resources */,
+				D33DA29B16D00A2A007D364A /* Credits.rtf in Resources */,
+				D33DA2A116D00A2A007D364A /* ASDocument.xib in Resources */,
+				D33DA2A416D00A2A007D364A /* MainMenu.xib in Resources */,
+				D30D8D1716D9365E00D4B7F7 /* ASSourceViewController.xib in Resources */,
+				D30D8D2216D9367D00D4B7F7 /* ASRegisterViewController.xib in Resources */,
+				D30D8D2516D9368500D4B7F7 /* ASLogViewController.xib in Resources */,
+				D30D8D2816D9369100D4B7F7 /* ASMemoryViewController.xib in Resources */,
+				D31C53F816E3FC8800F66A78 /* ASEFlagsViewController.xib in Resources */,
+				D3CC6E6B16E464F10039EE6E /* IDERoundToolbarButton_Pause_Active.png in Resources */,
+				D3CC6E6C16E464F10039EE6E /* IDERoundToolbarButton_Pause_Active@2x.png in Resources */,
+				D3CC6E7116E464F10039EE6E /* IDERoundToolbarButton_Run_Active.png in Resources */,
+				D3CC6E7216E464F10039EE6E /* IDERoundToolbarButton_Run_Active@2x.png in Resources */,
+				D3CC6E7716E464F10039EE6E /* IDERoundToolbarButton_Stop_Active.png in Resources */,
+				D3CC6E7816E464F10039EE6E /* IDERoundToolbarButton_Stop_Active@2x.png in Resources */,
+				D30AD49616E50DD5004BE616 /* SEClearHistoryImage.tiff in Resources */,
+				D30AD49716E50DD5004BE616 /* SECompileScriptImage.tiff in Resources */,
+				D30AD49816E50DD5004BE616 /* SECompileScriptImage@2x.png in Resources */,
+				D30AD49916E50DD5004BE616 /* SEContinueImage.tiff in Resources */,
+				D30AD49A16E50DD5004BE616 /* SERestartImage.tiff in Resources */,
+				D30AD49B16E50DD5004BE616 /* SERunScriptImage.tiff in Resources */,
+				D30AD49C16E50DD5004BE616 /* SEStopScriptImage.tiff in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D33DA2A716D00A2A007D364A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D33DA2B516D00A2A007D364A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3715E8116D692BD003B57EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3715E9016D692BE003B57EE /* InfoPlist.strings in Resources */,
+				D30C7B6D16D6A9E90000A5E0 /* assembly.g in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D33DA2A816D00A2A007D364A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D33DA28316D00A2A007D364A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D33DA29716D00A2A007D364A /* main.m in Sources */,
+				D33DA29E16D00A2A007D364A /* ASDocument.m in Sources */,
+				D33DA2C316D00A67007D364A /* ASRegisterView.m in Sources */,
+				D3D7A28716D053D5003C901F /* ASRegisterViewController.m in Sources */,
+				D3D7A28C16D055D8003C901F /* ASSourceViewController.m in Sources */,
+				D3D7A29116D0560C003C901F /* ASLogViewController.m in Sources */,
+				D3A297AA16D2B64900179675 /* ASDocumentController.m in Sources */,
+				D3CF3FED16D85AB10097B667 /* ASMemoryViewController.m in Sources */,
+				D3CF3FF116D85AD90097B667 /* ASMemoryView.m in Sources */,
+				D329602116DD3E800021AF53 /* ASMemoryLocationListItem.m in Sources */,
+				D3F60DDD16DD636700FAC43C /* ASMemoryHeaderListItem.m in Sources */,
+				D31C53F116E3FACF00F66A78 /* ASEFlagsViewController.m in Sources */,
+				D31C53F516E3FAFA00F66A78 /* ASEFlagsView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D33DA2A516D00A2A007D364A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D33DA2B816D00A2A007D364A /* ConstantTests.m in Sources */,
+				D370754216D094F90040BB01 /* RegisterTests.m in Sources */,
+				D305233816D1B78C00A8E114 /* InstructionTests.m in Sources */,
+				D30C7B9D16D8218B0000A5E0 /* MemoryTests.m in Sources */,
+				D31C53EC16E3ED6C00F66A78 /* EFlagTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3715E7E16D692BD003B57EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3715ED016D695D8003B57EE /* ASProgramAssembler.m in Sources */,
+				D3715ED216D6962C003B57EE /* ASProgram.m in Sources */,
+				D3715ED416D69631003B57EE /* ASProgramRunner.m in Sources */,
+				D3715ED616D69648003B57EE /* ASStatement.m in Sources */,
+				D3715ED816D6964D003B57EE /* ASContext.m in Sources */,
+				D3715EEA16D69781003B57EE /* ASSubRegister.m in Sources */,
+				D3715EEE16D6978D003B57EE /* AS8BitRegister.m in Sources */,
+				D3715EEF16D6978D003B57EE /* AS16BitRegister.m in Sources */,
+				D3715EF416D697B3003B57EE /* ASValue.m in Sources */,
+				D3715EF516D697B3003B57EE /* ASExpression.m in Sources */,
+				D3715EF616D697B3003B57EE /* ASRegister.m in Sources */,
+				D3715EF816D697D4003B57EE /* ASInstruction.m in Sources */,
+				D3715F1916D6984E003B57EE /* ASAndInstruction.m in Sources */,
+				D3715F1A16D6984E003B57EE /* ASDyadicInstruction.m in Sources */,
+				D3715F1B16D6984E003B57EE /* ASMovInstruction.m in Sources */,
+				D3715F1C16D6984E003B57EE /* ASNegInstruction.m in Sources */,
+				D3715F1D16D6984E003B57EE /* ASNotInstruction.m in Sources */,
+				D3715F1E16D6984E003B57EE /* ASOrInstruction.m in Sources */,
+				D3715F1F16D6984E003B57EE /* ASShlInstruction.m in Sources */,
+				D3715F2016D6984E003B57EE /* ASShrInstruction.m in Sources */,
+				D3715F2116D6984E003B57EE /* ASUnaryInstruction.m in Sources */,
+				D3715F2216D6984E003B57EE /* ASXorInstruction.m in Sources */,
+				D3715F2416D6988B003B57EE /* ASPutInstruction.m in Sources */,
+				D3CF3FF516D866FB0097B667 /* ASPushInstruction.m in Sources */,
+				D3CF3FF916D873A50097B667 /* ASPopInstruction.m in Sources */,
+				D305BBA716D964970089AB8C /* ASUtils.m in Sources */,
+				D305BBAC16D988BE0089AB8C /* ASAddressExpression.m in Sources */,
+				D305BBB216D9B4A70089AB8C /* ASMutableStorage.m in Sources */,
+				D308147B16DA879500E4E756 /* ASAddressIndexedExpression.m in Sources */,
+				D30814A316DADB7600E4E756 /* ASRegisterExpression.m in Sources */,
+				D30814A716DADB9500E4E756 /* ASMutableStorageExpression.m in Sources */,
+				D30814AC16DADC9500E4E756 /* AS32BitRegisterExpression.m in Sources */,
+				D30814B016DADCDD00E4E756 /* AS16BitRegisterExpression.m in Sources */,
+				D30814B416DADD0C00E4E756 /* AS8BitRegisterExpression.m in Sources */,
+				D30814D016DAEB3F00E4E756 /* ASAddressRegisterIndirectExpression.m in Sources */,
+				D30814E616DAF43900E4E756 /* ASStorage.m in Sources */,
+				D31C53E716E3EB8E00F66A78 /* ASEFlagsRegister.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3715EB916D692F7003B57EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3715E8216D692BD003B57EE /* AssemblyKit */;
+			targetProxy = D3715EB816D692F7003B57EE /* PBXContainerItemProxy */;
+		};
+		D3715EBC16D6931F003B57EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ParseKit;
+			targetProxy = D3715EBB16D6931F003B57EE /* PBXContainerItemProxy */;
+		};
+		D3715EC016D69417003B57EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3715E8216D692BD003B57EE /* AssemblyKit */;
+			targetProxy = D3715EBF16D69417003B57EE /* PBXContainerItemProxy */;
+		};
+		D3D7A27F16D00BBC003C901F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TDAppKit;
+			targetProxy = D3D7A27E16D00BBC003C901F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D30D8D1516D9365E00D4B7F7 /* ASSourceViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D30D8D1616D9365E00D4B7F7 /* en */,
+			);
+			name = ASSourceViewController.xib;
+			sourceTree = "<group>";
+		};
+		D30D8D2016D9367D00D4B7F7 /* ASRegisterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D30D8D2116D9367D00D4B7F7 /* en */,
+			);
+			name = ASRegisterViewController.xib;
+			sourceTree = "<group>";
+		};
+		D30D8D2316D9368500D4B7F7 /* ASLogViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D30D8D2416D9368500D4B7F7 /* en */,
+			);
+			name = ASLogViewController.xib;
+			sourceTree = "<group>";
+		};
+		D30D8D2616D9369100D4B7F7 /* ASMemoryViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D30D8D2716D9369100D4B7F7 /* en */,
+			);
+			name = ASMemoryViewController.xib;
+			sourceTree = "<group>";
+		};
+		D31C53F616E3FC8800F66A78 /* ASEFlagsViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D31C53F716E3FC8800F66A78 /* en */,
+			);
+			name = ASEFlagsViewController.xib;
+			sourceTree = "<group>";
+		};
+		D33DA29316D00A2A007D364A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D33DA29416D00A2A007D364A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D33DA29916D00A2A007D364A /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D33DA29A16D00A2A007D364A /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		D33DA29F16D00A2A007D364A /* ASDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D33DA2A016D00A2A007D364A /* en */,
+			);
+			name = ASDocument.xib;
+			sourceTree = "<group>";
+		};
+		D33DA2A216D00A2A007D364A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D33DA2A316D00A2A007D364A /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		D33DA2B316D00A2A007D364A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D33DA2B416D00A2A007D364A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D3715E8E16D692BE003B57EE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3715E8F16D692BE003B57EE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D33DA2B916D00A2A007D364A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D33DA2BA16D00A2A007D364A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D33DA2BC16D00A2A007D364A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Assembly/Assembly-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/lib/TDAppKit/include\"",
+					"\"$(SRCROOT)/AssemblyKit/include\"",
+				);
+				INFOPLIST_FILE = "Assembly/Assembly-Info.plist";
+				OTHER_LDFLAGS = (
+					"-rpath",
+					"@executable_path/../Frameworks/",
+				);
+				PRODUCT_NAME = Hilascene;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D33DA2BD16D00A2A007D364A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Assembly/Assembly-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/lib/TDAppKit/include\"",
+					"\"$(SRCROOT)/AssemblyKit/include\"",
+				);
+				INFOPLIST_FILE = "Assembly/Assembly-Info.plist";
+				OTHER_LDFLAGS = (
+					"-rpath",
+					"@executable_path/../Frameworks/",
+				);
+				PRODUCT_NAME = Hilascene;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D33DA2BF16D00A2A007D364A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Assembly/Assembly-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/AssemblyKit/include\"";
+				INFOPLIST_FILE = "AssemblyTests/AssemblyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		D33DA2C016D00A2A007D364A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Assembly/Assembly-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/AssemblyKit/include\"";
+				INFOPLIST_FILE = "AssemblyTests/AssemblyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		D3715E9516D692BE003B57EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath/";
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AssemblyKit/AssemblyKit-Prefix.pch";
+				INFOPLIST_FILE = "AssemblyKit/AssemblyKit-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_LDFLAGS = (
+					"-rpath",
+					"@loader_path/../Frameworks/",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		D3715E9616D692BE003B57EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath/";
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AssemblyKit/AssemblyKit-Prefix.pch";
+				INFOPLIST_FILE = "AssemblyKit/AssemblyKit-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_LDFLAGS = (
+					"-rpath",
+					"@loader_path/../Frameworks/",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D33DA28216D00A2A007D364A /* Build configuration list for PBXProject "Assembly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D33DA2B916D00A2A007D364A /* Debug */,
+				D33DA2BA16D00A2A007D364A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D33DA2BB16D00A2A007D364A /* Build configuration list for PBXNativeTarget "AssemblyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D33DA2BC16D00A2A007D364A /* Debug */,
+				D33DA2BD16D00A2A007D364A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D33DA2BE16D00A2A007D364A /* Build configuration list for PBXNativeTarget "AssemblyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D33DA2BF16D00A2A007D364A /* Debug */,
+				D33DA2C016D00A2A007D364A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3715E9F16D692BE003B57EE /* Build configuration list for PBXNativeTarget "AssemblyKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3715E9516D692BE003B57EE /* Debug */,
+				D3715E9616D692BE003B57EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D33DA27F16D00A2A007D364A /* Project object */;
+}
